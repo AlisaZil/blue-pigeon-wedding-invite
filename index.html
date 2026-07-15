@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jessica and Timothy's wedding invitation" />
+  <title>Jessica & Timothy | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <noscript>
+    <style>
+      .intro { display: none !important; }
+      body.intro-locked { overflow: auto !important; }
+      .hero-dove-l, .hero-dove-r, .hero-dove-art, .hero h1 > * { animation: none !important; }
+    </style>
+  </noscript>
+</head>
+<body class="intro-locked">
+  <div class="intro" id="intro">
+    <img class="intro-mark intro-mark-heart intro-mark-heart-l" src="assets/icons/heart-hollow.svg" alt="" aria-hidden="true" />
+    <img class="intro-mark intro-mark-heart intro-mark-heart-r" src="assets/icons/heart-hollow.svg" alt="" aria-hidden="true" />
+    <span class="intro-mark intro-mark-star intro-mark-star-1" aria-hidden="true">&#10022;</span>
+    <span class="intro-mark intro-mark-star intro-mark-star-2" aria-hidden="true">&#10022;</span>
+    <span class="intro-mark intro-mark-dot intro-mark-dot-1" aria-hidden="true">&middot;</span>
+    <span class="intro-mark intro-mark-dot intro-mark-dot-2" aria-hidden="true">&middot;</span>
+    <span class="intro-mark intro-mark-star intro-mark-star-3" aria-hidden="true">&#10022;</span>
+    <span class="intro-mark intro-mark-star intro-mark-star-4" aria-hidden="true">&#10022;</span>
+
+    <button class="intro-open" type="button" aria-label="Open the invitation">
+      <span class="intro-heading">
+        <p class="intro-title">You are invited</p>
+        <p class="intro-subtitle">To Jessica &amp; Timothy&rsquo;s wedding</p>
+      </span>
+
+      <span class="intro-envelope-frame">
+        <img class="intro-envelope" src="assets/envelope.png" alt="Wedding invitation envelope" />
+      </span>
+
+      <span class="intro-footer">
+        <span class="intro-hint"><i aria-hidden="true">&hearts;</i>Click to open!<i aria-hidden="true">&hearts;</i></span>
+
+        <span class="intro-date"><i></i><span>April 19th, 2026</span><i></i></span>
+        <img class="intro-date-heart" src="assets/icons/heart-filled.svg" alt="" aria-hidden="true" />
+      </span>
+    </button>
+  </div>
+
+  <div class="page-shell">
+    <header class="site-header" id="top">
+      <a class="brand-heart" href="#top" aria-label="Back to top"><img class="icon-img heart-icon" src="assets/icons/heart-hollow.svg" alt="" /></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#details">Details</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#rsvp">RSVP</a>
+      </nav>
+      <img class="header-heart icon-img heart-icon" src="assets/icons/heart-hollow.svg" alt="" aria-hidden="true" />
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <span class="hero-dove hero-dove-l" aria-hidden="true"><span class="hero-dove-art"></span></span>
+        <span class="hero-dove hero-dove-r" aria-hidden="true"><span class="hero-dove-art"></span></span>
+        <div class="hero-copy">
+          <img class="tiny-heart icon-img" src="assets/icons/heart-filled.svg" alt="" aria-hidden="true" />
+          <p class="eyebrow">Join us to celebrate<br />the wedding of</p>
+          <h1 id="hero-title"><span>Jessica</span><small>&amp;</small><span>Timothy</span></h1>
+          <div class="date-row"><i></i><strong>April 19th, 2026</strong><i></i></div>
+          <img class="tiny-heart icon-img" src="assets/icons/heart-filled.svg" alt="" aria-hidden="true" />
+        </div>
+      </section>
+
+      <section class="details" id="details" aria-labelledby="details-title">
+        <h2 class="sr-only" id="details-title">Wedding details</h2>
+        <div class="location-block reveal">
+          <img class="detail-icon location-icon" src="assets/icons/place.svg" alt="" aria-hidden="true" />
+          <p>123 Anywhere St.,<br />Any City, ST 12345</p>
+        </div>
+        <div class="ornament"><i></i><img class="small-heart" src="assets/icons/heart-filled.svg" alt="" aria-hidden="true" /><i></i></div>
+      </section>
+
+      <section class="schedule" id="schedule" aria-labelledby="schedule-title">
+        <h2 class="sr-only" id="schedule-title">Event schedule</h2>
+        <article class="schedule-item reveal">
+          <img class="schedule-icon" src="assets/icons/clock.svg" alt="" aria-hidden="true" />
+          <h3>1:30 PM</h3>
+          <img class="mini-heart" src="assets/icons/heart-hollow.svg" alt="" aria-hidden="true" />
+          <p>Guest arrival</p>
+        </article>
+        <article class="schedule-item reveal">
+          <img class="schedule-icon church-icon" src="assets/icons/church.svg" alt="" aria-hidden="true" />
+          <h3>2:00 PM</h3>
+          <img class="mini-heart" src="assets/icons/heart-hollow.svg" alt="" aria-hidden="true" />
+          <p>Ceremony</p>
+        </article>
+        <article class="schedule-item reveal">
+          <svg class="glasses-icon" viewBox="0 0 120 100" aria-hidden="true">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 8h28l-4 35c-1 13-8 22-18 22S9 56 8 43L4 8h16z"/>
+    <path d="M16 28h31M27 65v20M14 90h26"/>
+    <path d="M72 8h28l-4 35c-1 13-8 22-18 22s-17-9-18-22L56 8h16z"/>
+    <path d="M68 28h31M79 65v20M66 90h26"/>
+    <path d="M52 9V2M46 8L42 4M58 8L62 4"/>
+  </g>
+</svg>
+          <h3>6:00 PM</h3>
+          <img class="mini-heart" src="assets/icons/heart-hollow.svg" alt="" aria-hidden="true" />
+          <p>Dinner &amp; celebration</p>
+        </article>
+      </section>
+
+      <section class="rsvp" id="rsvp" aria-labelledby="rsvp-title">
+        <div class="section-title reveal">
+          <img class="small-heart" src="assets/icons/heart-filled.svg" alt="" aria-hidden="true" />
+          <h2 id="rsvp-title">RSVP</h2>
+          <img class="small-heart" src="assets/icons/heart-filled.svg" alt="" aria-hidden="true" />
+        </div>
+        <p class="script-note reveal">Kindly reply by March 15th, 2026</p>
+
+        <form class="rsvp-form reveal" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Your email" autocomplete="email" required />
+
+          <label for="guests">Number of people</label>
+          <select id="guests" name="guests" required>
+            <option value="" selected disabled>e.g. 2</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+
+          <button type="submit">Submit RSVP <span aria-hidden="true">♥</span></button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+        <p class="closing-note">We can’t wait to celebrate with you!</p>
+        <img class="footer-heart" src="assets/icons/heart-hollow.svg" alt="" aria-hidden="true" />
+      </section>
+    </main>
+  </div>
+</body>
+</html>
